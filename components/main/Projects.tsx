@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motions";
-import Tooltip from "@/utils/tooltip";
+import Tooltip from "@/components/ui/tooltip";
 
 const Projects = () => {
   return (
