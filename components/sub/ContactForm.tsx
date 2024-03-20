@@ -16,10 +16,20 @@ function ContactForm() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const isValidEmail = (email: string) => emailRegex.test(email);
+
   const sendMail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
+
+    if (!isValidEmail(email)) {
+      toast.error("Please enter a valid email address.");
+      setIsSubmitting(false); // Prevent unnecessary API call
+      return; // Exit function early on invalid email
+    }
 
     try {
       const response = await fetch("/api/sendEmail", {
@@ -47,7 +57,6 @@ function ContactForm() {
         setCompany(() => "");
         setSubject(() => "");
         setMessage(() => "");
-        
       } else {
         // Handle other status codes (e.g., 400, 500)
         setError(
@@ -67,7 +76,7 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={sendMail} className="my-8 ">
+    <form onSubmit={sendMail} className="my-8">
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer>
           <Label htmlFor="firstname">First name</Label>
