@@ -5,6 +5,7 @@ import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import { Toaster } from "react-hot-toast";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <main className="flex-1">
             <Toaster position="top-center" />
             {children}
+            <SpeedInsights />
           </main>
 
           {/* <Footer /> */}

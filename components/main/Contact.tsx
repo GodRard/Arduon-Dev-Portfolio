@@ -14,7 +14,7 @@ function Contact() {
           CONTACT ME
         </h2>
         <p className="text-neutral-50 text-sm max-w-sm mt-4 text-center">
-          Whether you have a question, want to hire me, or just simply want to say hi, I&apos;d love to hear from you.
+        If you find my skills an asset to your company, I&apos;d love to hear from you.
         </p>
         <p className="text-neutral-50 text-sm max-w-sm mt-3 text-center">
           Feel free to send me a direct message at gerardhansmisa@gmail.com or in the contact form.
@@ -22,7 +22,7 @@ function Contact() {
       </div>
 
       <div className="max-w-2xl mx-auto p-4 mb-10 z-30">
-        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-[#0D101A]  ">
+        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-[#0D101A]">
           <ContactForm/>
         </div>
       </div>
