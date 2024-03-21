@@ -32,7 +32,7 @@ const words = [
   },
   {
     text: "modern",
-    className: "text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-300  text-3xl",
+    className: "text-sky-400 text-3xl",
   },
   {
     text: "technologies",
@@ -53,7 +53,7 @@ const SkillText = () => {
       </motion.div>
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className=" gap-5 text-4xl font-bold text-center text-white max-w-[600px] w-auto h-auto"
+        className=" gap-5 text-4xl font-bold text-center text-white sm:max-w-[600px] w-auto h-auto"
       >
         <span>
           <TypewriterEffect words={words} />

@@ -170,13 +170,6 @@ function ContactForm() {
         {isSubmitting ? "Sending..." : "Send Message"} &rarr;
         <BottomGradient />
       </button>
-
-      {/* {submitSuccess ? (
-        <>{toast.success("Message sent successfully!")}
-          {setTimeout(() => setSubmitSuccess(false), 3000)}
-        </>
-      ) : null}
-      {submitError} */}
     </form>
   );
 }

@@ -9,7 +9,7 @@ import Tooltip from "@/components/ui/tooltip";
 const Projects = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center pb-20 px-20"
+    className="flex flex-col items-center justify-center pb-20 px-4 md:px-20"
       id="projects"
     >
       <motion.div
@@ -20,7 +20,7 @@ const Projects = () => {
           My Projects
         </h1>
       </motion.div>
-      <div className="grid grid-cols-3 md:grid-cols-2 gap-14 px-10 z-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 px-2 md:px-10 z-20">
         <div className="relative">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 to-blue-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
           <CardContainer className="inter-var ">
@@ -37,7 +37,7 @@ const Projects = () => {
                 className="text-neutral-200 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
                 It aims to make it easier for women to have a quick consultation
-                with the OB/GYN. 
+                with the OB/GYN.
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image

@@ -6,9 +6,10 @@ import Skills from "../components/main/Skills";
 import Contact from "../components/main/Contact";
 import Project from "../components/main/Projects";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -24,6 +25,7 @@ export default function Home() {
           muted
           loop
           className="rotate-180 absolute top-[-470px] left-0 z-[1] w-full h-auto object-cover"
+          
         >
           <source src="/bluehole.webm" type="video/webm"></source>
         </video>

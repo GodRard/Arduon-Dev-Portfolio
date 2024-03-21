@@ -32,7 +32,8 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-[200px] h-auto w-full z-[20]"
+      className="flex flex-col sm:flex-row items-center justify-center px-4 sm:px-20 mt-[200px] h-auto w-full z-[20]"
+
     >
       <div
         data-scroll
@@ -50,7 +51,7 @@ const HeroContent = () => {
         </motion.div>
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 text-5xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 text-5xl font-bold text-white max-w-[600px] sm:w-full h-auto"
         >
           <span>
             <span className="text-2xl ml-1 text-gray-200">Hi, I&apos;m</span>{" "}
@@ -85,13 +86,14 @@ const HeroContent = () => {
         data-scroll
         data-scroll-speed=".5"
         variants={slideInFromRight(0.8)}
-        className=" w-full height={650} width={650} flex justify-center z-[30] items-center"
+        className=" w-full sm:w-1/2 justify-center z-[30] items-center hidden md:block"
       >
         <Image
           src="/techStack2.svg"
           alt="work icons"
           height={600}
           width={600}
+          priority
         />
        
       </motion.div>

@@ -16,14 +16,14 @@ const Skills = () => {
       style={{ transform: "scale(0.9)" }}
     >
       <SkillText />
-      <div className="grid grid-cols-2 gap-14 mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 mt-5">
         <div className="flex-1 relative">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 to-blue-500 transform scale-[0.80] bg-red-500 rounded-full blur-2xl" />
           <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-top items-center">
             <h2 className="text-center text-white text-xl font-bold mb-4">
               Frontend
             </h2>
-            <div className="flex justify-center space-x-3 m-2 ">
+            <div className="flex justify-center flex-wrap sm:flex-nowrap space-x-3 m-2 ">
               <span className="py-2 px-3 inline-flex items-center gap-x-1 text-xs font-medium border rounded-lg border-gray-400 text-white">
                 <Image
                   src="/java-script.png"
@@ -58,7 +58,7 @@ const Skills = () => {
                 <Image src="/react.png" alt="" width={16} height={16}></Image>
                 ReactJS
               </span>
-              <span className="py-2 px-3 inline-flex items-center gap-x-1 text-xs font-medium border rounded-lg border-gray-400 text-white">
+              <span className="py-2 w-auto h-auto px-3 inline-flex items-center gap-x-1 text-xs font-medium border rounded-lg border-gray-400 text-white">
                 <Image
                   src="/materialui.png"
                   alt=""
@@ -100,7 +100,7 @@ const Skills = () => {
             <h2 className="text-center text-white text-xl font-bold mb-4">
               Backend
             </h2>
-            <div className="flex justify-center space-x-3 m-2 ">
+            <div className="flex justify-center flex-wrap sm:flex-nowrap space-x-3 m-2 ">
               <span className="py-2 px-3 inline-flex items-center gap-x-1 text-xs font-medium border rounded-lg border-gray-400 text-white">
                 <Image src="/mongodb.png" alt="" width={16} height={16}></Image>
                 MongoDB
@@ -141,7 +141,7 @@ const Skills = () => {
             <h2 className="text-center text-white text-xl font-bold mb-4">
               Mobile
             </h2>
-            <div className="flex justify-center space-x-3 m-2 ">
+            <div className="flex justify-center flex-wrap sm:flex-nowrap space-x-3 m-2 ">
               <span className="py-2 px-3 inline-flex items-center gap-x-1 text-xs font-medium border rounded-lg border-gray-400 text-white">
                 <Image src="/kotlin.png" alt="" width={16} height={16}></Image>
                 Kotlin
@@ -173,7 +173,7 @@ const Skills = () => {
             <h2 className="text-center text-white text-xl font-bold mb-4">
               Others
             </h2>
-            <div className="flex justify-center space-x-3 m-2 ">
+            <div className="flex justify-center flex-wrap sm:flex-nowrap space-x-3 m-2 ">
               <span className="py-2 px-3 inline-flex items-center gap-x-1 text-xs font-medium border rounded-lg border-gray-400 text-white">
                 <Image src="/vscode.png" alt="" width={16} height={16}></Image>
                 VS Code
