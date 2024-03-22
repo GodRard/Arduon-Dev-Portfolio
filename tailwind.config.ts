@@ -14,10 +14,6 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    // screens: {
-    //   'laptop': '1080px',
-    //   // => @media (min-width: 1080px) { ... }
-    // },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

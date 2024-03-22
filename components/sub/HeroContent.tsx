@@ -11,16 +11,11 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import { useTypewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import { FiDownload } from "react-icons/fi";
-import TechStack from "/public/techStack2.svg"
+import TechStack from "/public/techStack2.svg";
 
-const description = `I am a 4th year BSIT-MWA undergraduate who has a passion for
-creating beautiful and functional websites. I specialize in front-end
-development and design, but I also have experience with back-end
-development and databases. I am always looking for new
-opportunities to learn and grow as a developer, and I am excited
-to bring my skills to your company.`;
+interface HeroContentProps {}
 
-const HeroContent = () => {
+const HeroContent: React.FC<HeroContentProps> = () => {
   const [role] = useTypewriter({
     words: ["Web Developer", "Web Designer", "Frontend Developer"],
     loop: false,
@@ -31,7 +26,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col sm:flex-row items-center justify-center px-4 sm:px-20 mt-[200px] h-auto w-auto z-[20] mb-20 mx-20"
+      className="flex flex-col sm:flex-row items-center justify-center px-4 sm:px-20 mt-[200px] h-auto w-auto z-[20] md:mb-20 md:mx-20"
     >
       <div
         data-scroll
@@ -65,7 +60,13 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-300 my-3 max-w-[600px]"
         >
-          {description}
+          I am a 4th year BSIT-MWA student with a passion for building
+          beautiful and functional websites. I specialize in front-end
+          development and design, but I also have experience in back-end and
+          databases.
+          <br/>
+          <br />Always eager to learn and grow as a developer and excited
+          to bring my skills to your company.
         </motion.p>
 
         <motion.a
@@ -85,11 +86,7 @@ const HeroContent = () => {
         variants={slideInFromRight(0.8)}
         className=" w-full sm:w-1/2 justify-center z-[30] items-center hidden md:block"
       >
-        <Image
-          src={TechStack}
-          alt="work icons"
-          priority
-        />
+        <Image src={TechStack} alt="work icons" priority />
       </motion.div>
     </motion.div>
   );

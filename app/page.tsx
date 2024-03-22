@@ -25,7 +25,7 @@ export default function Home() {
           muted
           loop
           className="rotate-180 absolute top-[-470px] left-0 z-[1] w-full h-auto object-cover"
-          
+          preload="none"
         >
           <source src="/bluehole.webm" type="video/webm"></source>
         </video>
