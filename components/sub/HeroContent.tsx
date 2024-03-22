@@ -11,15 +11,14 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import { useTypewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import { FiDownload } from "react-icons/fi";
+import TechStack from "/public/techStack2.svg"
 
-const description = `I'm a 4th year BSIT-MWA undergrad who has a passion for
+const description = `I am a 4th year BSIT-MWA undergraduate who has a passion for
 creating beautiful and functional websites. I specialize in front-end
 development and design, but I also have experience with back-end
-development and databases. I'm always looking for new
-opportunities to learn and grow as a developer, and I'm excited
-to bring my skills to your company`;
-
-
+development and databases. I am always looking for new
+opportunities to learn and grow as a developer, and I am excited
+to bring my skills to your company.`;
 
 const HeroContent = () => {
   const [role] = useTypewriter({
@@ -32,8 +31,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col sm:flex-row items-center justify-center px-4 sm:px-20 mt-[200px] h-auto w-full z-[20]"
-
+      className="flex flex-col sm:flex-row items-center justify-center px-4 sm:px-20 mt-[200px] h-auto w-auto z-[20] mb-20 mx-20"
     >
       <div
         data-scroll
@@ -54,8 +52,7 @@ const HeroContent = () => {
           className="flex flex-col gap-6 text-5xl font-bold text-white max-w-[600px] sm:w-full h-auto"
         >
           <span>
-            <span className="text-2xl ml-1 text-gray-200">Hi, I&apos;m</span>{" "}
-            <br />
+            <span className="text-2xl ml-1 text-gray-200">Hi, I am</span> <br />
             Gerard Misa
             <br /> a {""}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-300">
@@ -89,13 +86,10 @@ const HeroContent = () => {
         className=" w-full sm:w-1/2 justify-center z-[30] items-center hidden md:block"
       >
         <Image
-          src="/techStack2.svg"
+          src={TechStack}
           alt="work icons"
-          height={600}
-          width={600}
           priority
         />
-       
       </motion.div>
     </motion.div>
   );

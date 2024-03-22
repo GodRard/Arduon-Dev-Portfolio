@@ -17,7 +17,7 @@ function Contact() {
         If you find my skills an asset to your company, I&apos;d love to hear from you.
         </p>
         <p className="text-neutral-50 text-sm max-w-sm mt-3 text-center">
-          Feel free to send me a direct message at gerardhansmisa@gmail.com or in the contact form.
+          Feel free to send me a direct message at gerardhansmisa@gmail.com / 09945797707 or in the contact form if you have any queries.
         </p>
       </div>
 
